@@ -1,0 +1,109 @@
+header{
+    position: absolute;
+    top:15px;
+    left: 0;
+    padding: 0 100px;
+    background-color: #813588;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .Logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+
+}
+header nav ul li a{
+   height: 50px;
+   line-height: 50px;
+   padding: 0 20px;
+   color: #fff;
+   text-decoration: none;
+   color:#ffc846;
+}
+header nav ul li a:hover,
+header nav ul li a:active{
+    color: #fff;
+   
+}
+
+.menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/*********************/
+header nav ul li ul{
+    left:0;
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    padding: 10px 40px 10px 26px;
+    background-color: #73207a;
+    border-radius: 0px 24px 24px;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.05)
+
+}
+header nav ul li ul li{
+   display: block;
+   width:150px;
+   font-size: 13px;
+}
+
+header nav ul li:hover ul{
+    display: block;
+   
+
+}
+
+header nav ul li.sub-menu:before 
+{
+content: '\f0d7';
+font-family: fontAwesome;
+position: absolute;
+line-height: 50px;
+color: #fff;
+right:5px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 24px;
+    border: 2px solid #9b93a0;
+    border-radius: 30px;
+   
+
+    text-shadow: #ffffff 1px 1px 1px;
+    font: normal normal normal 18px arial;
+    
+    text-decoration: none;
+
+    background-image: linear-gradient(to right,#9752ff,#5e93ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

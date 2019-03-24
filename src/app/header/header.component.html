@@ -1,21 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">HOME</a>
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> -->
-      <span class="navbar-toggler-icon"></span>
-    <!-- </button> -->
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/header">contact<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/header">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/header">search</a>
-        </li>
-      </ul>
-      
-    </div>
+<header>
+  <div class="Logo">
+      <img src="https://cdn1.byjus.com/home/logo.svg" alt="byjus.com" width="198" height="55">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#" class="dropdown-toggle">Study Material
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"><path fill="#FFC846" fill-opacity=".6" fill-rule="evenodd" d="M6.003 6.06c-.386.465-1.148.58-1.702.256a1.145 1.145 0 0 1-.304-.256L.72 2.113C.334 1.648.47 1.008 1.024.684A1.39 1.39 0 0 1 1.723.5h6.554C8.953.5 9.5.96 9.5 1.526c0 .21-.077.415-.22.587L6.003 6.06z"></path></svg>
+      </a>
+        <ul>
+          <li *ngFor="let link of navigationlinks"  ><a href="#">{{link.name}}</a>
+        </ul>
+      </li>
+      <li><a href="#" class="sub-menu">Classes
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"><path fill="#FFC846" fill-opacity=".6" fill-rule="evenodd" d="M6.003 6.06c-.386.465-1.148.58-1.702.256a1.145 1.145 0 0 1-.304-.256L.72 2.113C.334 1.648.47 1.008 1.024.684A1.39 1.39 0 0 1 1.723.5h6.554C8.953.5 9.5.96 9.5 1.526c0 .21-.077.415-.22.587L6.003 6.06z"></path></svg>
+      </a>
+        <ul>
+          <li *ngFor="let Class of Classes"  ><a href="#">{{Class.name}}</a>
+        </ul>
+      </li>
+      <li><a href="#">Buy a Course</a></li>
+      <li><a href="#">Free Counselling</a></li>
+      <li><a class="button" href="#">Register for Free</a></li>
+    </ul>
   </nav>
-  <a routerLink="/header" class="button"></a>
+  <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+</header>
